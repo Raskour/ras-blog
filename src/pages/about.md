@@ -14,10 +14,10 @@ skills and collaborate on impactful projects to deliver top-notch user experienc
 ## Skills and Competencies
 
 - **Front-End**: React, HTML, CSS, JavaScript (JS)
-- Back-End: RESTful API, ExpressJS, NodeJS, Php, MySQL, Python
-- Accessibility & SEO: WCAG AA, Best practices
-- Version Control: Git, GitHub
-- CMS: WordPress
+- **Back-End**: RESTful API, ExpressJS, NodeJS, Php, MySQL, Python
+- **Accessibility & SEO**: WCAG AA, Best practices
+- **Version Control**: Git, [GitHub](https://github.com/Raskour)
+- **CMS**: [WordPress](https://www.visitseoul.epizy.com/?i=1)
 
 ## Work Experience
 
