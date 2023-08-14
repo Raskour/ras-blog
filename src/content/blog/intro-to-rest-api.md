@@ -18,7 +18,7 @@ API (Application Programming Interface) is a set of rules that allows the develo
 
 It acts as an interface between different applications. They are commonly used to access data, services or features provided by other applications, libraries or platform.
 
-![API integration with client, server, database and cloud](/assets/api.svg)
+![API integration with client, server, database and cloud](/assets/api.jpg)
 
 A general API is a broader term that can encompass various architectural styles including REST.
 
@@ -36,7 +36,7 @@ REST stands for Representational State Transfer. In simple words it means that e
 
 It is commonly used for building webservices that allow different software applications to communicate with each other over internet. It uses HTTP protocol as a communication interface and transfers data through HTTP methods.
 
-![REST API in action](/assets/rest-api.svg)
+![REST API in action](/assets/rest-api.jpg)
 
 ---
 
