@@ -18,4 +18,4 @@ All commands are run from the root of the project, from a terminal:
 | `npm run cz`           | Commit code changes with commitizen                                                                                              |
 | `npm run lint`         | Lint with ESLint                                                                                                                 |
 
-Made with 🤍 by [Rasmeet Kour](https://raskode.dev) 👨🏻‍💻
+Made with 🤍 by [Rasmeet Kour](https://raskour.com) + Astro(/assets/)

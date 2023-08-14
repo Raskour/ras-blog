@@ -1,11 +1,11 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://ras-paper.dev/",
+  website: "https://raskour.com/",
   author: "Rasmeet Kour",
-  desc: "My personal blog to share articles about tech space.",
-  title: "RasPaper",
-  ogImage: "astropaper-og.jpg",
+  desc: "My personal blog to share articles about React, JavaScript, Accessibility, tips and web fundamentals.",
+  title: "RKour",
+  ogImage: "", // TODO: fix og Image
   lightAndDarkMode: true,
   postPerPage: 3,
 };

@@ -1,6 +1,6 @@
 ---
 author: Rasmeet Kour
-pubDatetime: 2023-08-12T12:15:24Z
+pubDatetime: 2023-14-12T5:15:24Z
 title: Intro to REST API
 postSlug: intro-to-rest-api
 featured: true
