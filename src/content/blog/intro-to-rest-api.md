@@ -10,7 +10,7 @@ tags:
   - api
   - http
   - intro
-ogImage: ""
+ogImage: "/assets/into-rest-og.jpg"
 description: This article will explain what an API is and why do we need REST APIs for.
 ---
 
