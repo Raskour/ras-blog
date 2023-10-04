@@ -32,8 +32,7 @@ _Contact: ThinkCore Pty Ltd , Email - bipin@thinkcore.com.au - 0404135259_
 
 ## Projects
 
-- [VisitSeoul](https://www.visitseoul.epizy.com/?i=1): Built a travel website using WordPress: an open source content management system.
-  Applied relevant plugins to make sure it’s optimised for SEO and has no security vulnerabilities.
+- [Raskour Food](https://raskour-food.vercel.app): Designed a ReactJS-based food ordering app with Redux as state management library. It allows users to search for restaurants, add items to favourites and cart. It consumes data from an external REST API that was implemented using NextJS.
 
 - [TipToe Soles](https://www.tiptoesoles.epizy.com/): Start off with building mock ups and wireframe using Lucidcharts, and then developing a
   responsive website using semantic HTML, vanilla JavaScript and CSS. Github code link.
@@ -41,3 +40,6 @@ _Contact: ThinkCore Pty Ltd , Email - bipin@thinkcore.com.au - 0404135259_
 - [SpotSunny Accomodation website](https://www.spotsunny.epizy.com/): Developed an accomodation website allow users to book sites for
   holidays.Backend was implemented using PHP and MySQL . Created ERD diagrams, Data dictionary
   and SQL scripts to test the database initialisation process.
+
+- [VisitSeoul](https://www.visitseoul.epizy.com/?i=1): Built a travel website using WordPress: an open source content management system.
+  Applied relevant plugins to make sure it’s optimised for SEO and has no security vulnerabilities.
