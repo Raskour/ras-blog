@@ -1,6 +1,6 @@
 ---
 author: Rasmeet Kour
-pubDatetime: 2023-14-12T5:15:24Z
+pubDatetime: 2023-08-14T5:15:24Z
 title: Intro to REST API
 postSlug: intro-to-rest-api
 featured: true
@@ -78,7 +78,7 @@ There are [several types of headers](https://developer.mozilla.org/en-US/docs/We
 
 - `Content-Type`: This header indicates the format of the data in the request or response body. For example, it could be set to `application/json` if the data is in [JSON format](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON), or `text/xml` if it's in [XML format](https://developer.mozilla.org/en-US/docs/Web/XML/XML_introduction).
 
-```
+```js
   POST /api/users
   Content-Type: application/json
   { "name": "Alice", "email": "alice@example.com" }
@@ -86,9 +86,9 @@ There are [several types of headers](https://developer.mozilla.org/en-US/docs/We
 
 - `Accept`: This header specifies the preferred format for the response data. It tells the server what content type the client can process. For example, `Accept: application/json` indicates that the client prefers JSON data.
 
-```
-  GET /api/posts/123
-  Accept: application/json
+```js
+GET / api / posts / 123;
+Accept: application / json;
 ```
 
 ### Query Parameters
@@ -98,13 +98,13 @@ Some examples are:
 
 - `Filtering Resources`: Query parameters are commonly used to filter resources based on specific criteria. In this example below, we're requesting a list of products that belong to the _"electronics"_ category.
 
-```
+```js
   GET /api/products?category=electronics
 ```
 
 - `Searching Resources`: Query parameters can be used to perform searches on the server. Here, we're searching for products that match the keyword _"phone"_
 
-```
+```js
   GET /api/products?search=phone
 ```
 
@@ -114,7 +114,7 @@ For `POST` and `PUT` requests, the request body contains the data that the clien
 
 Here's a simple example of a REST API request to create a new user:
 
-```
+```js
   POST /api/users
   Host: example.com
   Content-Type: application/json
