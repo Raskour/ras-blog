@@ -1,6 +1,6 @@
 ---
 author: Rasmeet Kour
-pubDatetime: 2025-05-06T5:15:24Z
+pubDatetime: 2025-05-14T5:15:24Z
 title: How to persist UI state on page reload
 postSlug: how_to_persist_UI_state_on_page_reload
 featured: true
@@ -8,10 +8,11 @@ draft: false
 tags:
   - react
   - useSearchParams
-  - javascript
+  - query parameters
 
 description: This article explains how useSearchParams can be used to sync UI with URL.
 ---
+
 # How to persist UI state on page reload
 
 Recently while building a product listing page in my React app, I ran into a frustrating issue.
@@ -23,7 +24,7 @@ That’s when I realized I needed to **store some UI state in the URL**.
 I had something like this:
 
 ```jsx
-const [category, setCategory] = useState('All');
+const [category, setCategory] = useState("All");
 ```
 
 This worked... until:
@@ -42,7 +43,7 @@ To fix this, I used the `useSearchParams` hook from React Router.
 
 ```jsx
 const [searchParams, setSearchParams] = useSearchParams();
-const category = searchParams.get('category') || 'All';
+const category = searchParams.get("category") || "All";
 ```
 
 The `useSearchParams` hook returns an array with two elements:
@@ -55,13 +56,13 @@ The `.get()` method reads the current value of a query parameter — in this cas
 For example, if the URL is:
 
 ```
-/products?category=indoor
+/products?category=outdoor
 ```
 
 Then:
 
 ```jsx
-searchParams.get('category'); // returns "indoor"
+searchParams.get("category"); // returns "outdoor"
 ```
 
 This allows you to **access state from the URL**, just like you'd read from React state — but it's now **persistent**, even across page refreshes or direct links.
@@ -73,7 +74,7 @@ This allows you to **access state from the URL**, just like you'd read from Reac
 When I want to update the query parameters, I use `setSearchParams()`:
 
 ```jsx
-setSearchParams({ category: 'indoor' });
+setSearchParams({ category: "indoor" });
 ```
 
 It updates the URL to:
@@ -100,7 +101,7 @@ Here’s how to update multiple query parameters at once:
 
 ```jsx
 setSearchParams({
-  category: 'indoor',
+  category: "indoor",
   page: 2,
 });
 ```
@@ -114,9 +115,9 @@ This will update the URL to:
 You can also use the **functional form** when you want to change just one param (like `category`) without losing others (like `page`):
 
 ```jsx
-setSearchParams((prevParams) => {
+setSearchParams(prevParams => {
   const newParams = new URLSearchParams(prevParams);
-  newParams.set('category', 'indoor');
+  newParams.set("category", "indoor");
   return newParams;
 });
 ```
@@ -166,20 +167,20 @@ And to handle category selection and page updates:
 function handleCategory(e) {
   const category = e.target.value;
 
-  setSearchParams((prevParams) => {
+  setSearchParams(prevParams => {
     const newParams = new URLSearchParams(prevParams);
-    newParams.set('category', category);
-    newParams.set('page', 1); // reset page to 1 when category changes
+    newParams.set("category", category);
+    newParams.set("page", 1); // reset page to 1 when category changes
     return newParams;
   });
 }
 
 function handleNextPage() {
-  const currentPage = Number(searchParams.get('page') || 1);
+  const currentPage = Number(searchParams.get("page") || 1);
 
-  setSearchParams((prevParams) => {
+  setSearchParams(prevParams => {
     const newParams = new URLSearchParams(prevParams);
-    newParams.set('page', currentPage + 1);
+    newParams.set("page", currentPage + 1);
     return newParams;
   });
 }
